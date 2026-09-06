@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.halamanUtama {
+    font-family: "caacupe one", cursive;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #f59494, #000000);
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box; 
+}
+@keyframes naikTurun {
+  0% {
+    transform: translateY(0); /* Posisi awal */
+  }
+  50% {
+    transform: translateY(-15px); /* Naik ke atas sejauh 15px */
+  }
+  100% {
+    transform: translateY(0); /* Kembali ke posisi awal */
+  }
+}
+
+/* 2. Pasang animasi ke teks h1 (judul "Pengecekan") */
+.halamanUtama h1 {
+  /* nama-animasi | durasi | tipe-gerakan | perulangan */
+  animation: naikTurun 4s ease-in-out infinite;
+}
+
+/* Styling untuk wadah pesan hasil */
+.pesanHasil {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
